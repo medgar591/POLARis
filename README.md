@@ -1,25 +1,16 @@
 # POLARis
 A simple-ish game based on polar graphs
 
-This game is a side scrolling shooter.
+This game is a single screen game similar to asteroid
 
-The player will be represented by a Triangle on the Center-Left pointing Right
-Enemies will be Squares that go from the Right toward the Left
-Every time a square reaches the Left, the player loses a life
-Each Square is worth 15 points
+The player will control a ship in the center of the screen
+Circles and squares will float around on the screen
+Each Circle is worth 15 points
+Hitting a square will cause the player to lose a life
 
 The controls will use the arrow keys and the space bar
-The player will NOT be able to move the ship, but fire bullets that move in different patterns based on the direction
+The arrow keys will move the player along a different polar graph
 The space bar will drop a bomb in the center of the screen which will cause a huge explosion
 Bombs will be replenished every 15? enemies (225?)
 
 
-Example:
-
-+===================+
-|................X..| Lives: XXX
-|.\.................| Bombs: OOOO
-|.|>................| Score: 255
-|./.........X.......|
-|..................X|
-+===================+
