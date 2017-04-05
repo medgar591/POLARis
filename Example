@@ -1,0 +1,53 @@
+import pygame
+from pygame.locals import *
+import os
+import sys
+import time
+pygame.init()
+
+class Fly:
+    def __init__(self):
+        self.last_update = time.clock()
+
+        self.screen = pygame.display.set_mode((700, 400), 0, 32)
+        #Load bird
+        self.bird_state = 1
+        self.bird_frames = []
+        for r in xrange(1, 5):
+            self.bird_frames.append(pygame.image.load('bird%s.png' % r))
+        self.bg = pygame.image.load('bg.png').convert()
+
+        self.Loop()
+
+    def eventLoop(self):
+        'Take and process input from perephirals'
+        for event in pygame.event.get():
+            if event.type == QUIT:
+                sys.exit()
+
+    def Update(self):
+        self.bird_state += 1
+        if self.bird_state > 4:
+            self.bird_state = 1
+
+    def Draw(self):
+        self.screen.blit(self.bg, [0, 0])
+        self.screen.blit(self.bird_frames[self.bird_state - 1], (150, 150))
+
+    def Loop(self):
+        while 1:
+            self.eventLoop()
+
+            k = pygame.key.get_pressed()
+            if k[K_DOWN]:
+                # Do something with your bird
+            if k[K_UP]:
+                # Do something with your bird
+
+            if time.clock() - self.last_update > 0.15:
+                self.Update()
+                self.last_update = time.clock()
+            self.Draw()
+            pygame.display.update()
+
+Fly()
