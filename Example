@@ -167,4 +167,6 @@ def main():
   
 if __name__ == "__main__":
     main()
-  
+
+http://knuth.luther.edu/~leekent/SamplingCS/lesson11.html
+
