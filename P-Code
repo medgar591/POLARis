@@ -1,0 +1,32 @@
+#Import libraries
+
+#Set variables
+
+def core():
+    #Display Screen
+    while lives >= 0:
+        #Spawn Enemies
+        #Get User input - use bullet(keystroke)
+        #loop
+    cls
+    center.print("Game Over" /n + "You Scored: %score% points")
+
+def bullet(shot):
+    if shot == 0:
+        #move in pattern UP
+    elif shot == 1:
+        #move in pattern RIGHT
+    elif shot == 2:
+        #move in pattern DOWN
+    elif shot == 3:
+        #move in pattern LEFT
+    elif shot == 4:
+        if bombs > 0:
+            #move in pattern BOMB
+    else:
+        return null
+
+def enemy(score):
+    //Enemies scale based on score
+    for enemy in range(randint(1,5) + (score/75 #round down):
+        place_enemy(offscreen, randint(#reasonable amount)
