@@ -1,5 +1,5 @@
 # POLARis / POLARroids
-A simple game based on polar graphs.
+A simple timing game based on polar graphs.
 
 This game is a single screen game similar to asteroid with a player ship in the center and floating rocks.
 
