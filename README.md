@@ -1,16 +1,14 @@
 # POLARis / POLARroids
-A simple-ish game based on polar graphs.
+A simple game based on polar graphs.
 
-This game is a single screen game similar to asteroid.
+This game is a single screen game similar to asteroid with a player ship in the center and floating rocks.
 
-The player will control a mining ship in the center of the screen.
-Circles and squares will float around on the screen.
-Each Circle is worth 15 points.
-Hitting a square will cause the player to lose a life, but only when being moved by the player.
+The player will control the ship in the center of the screen.
+Squares will float around on the screen.
+Hitting a square will cause the player to lose a life, but only when the player has moved the ship.
 
-The controls will use the arrow keys and the space bar.
-The arrow keys will move the player along a different polar graph.
-The space bar will drop a bomb in the center of the screen which will cause a huge explosion collecting everything hit while being invulnerable.
-Bombs will be replenished every 15? enemies (225 points?).
-
-
+The control only be the spacebar.
+The player will press the spacebar and the ship will move in the pattern of a polar graph.
+Completing a polar graph will tick the score up by 1, completing a set of polar graphs will increase the score by 5.
+There will be 5 graphs in a set.
+Every complete set will introduce one more obstacle.
